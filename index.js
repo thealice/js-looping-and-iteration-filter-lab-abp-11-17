@@ -1,7 +1,7 @@
 const drivers = [{firstName: 'Bobby'}, {firstName: 'Sammy'}, {firstName: 'Sally'}, {firstName: 'Annette'}, {firstName: 'Sarah'}, {firstName: 'Bobby'}];
-function findMatching (collection, cb) {
+function findMatching (collection, string) {
   for (const driver of collection) {
-    if (cb(driver)) {
+    if (string(driver)) {
       return (driver.firstName);
     }
   }
