@@ -10,7 +10,7 @@ const drivers = [{firstName: 'Bobby'}, {firstName: 'Sammy'}, {firstName: 'Sally'
 
 function findMatching (collection, string) {
   for (const driver of collection) {
-    if (driver.firstName === string;) {
+    if (driver.firstName === string) {
       return (driver.firstName);
     }
   }
